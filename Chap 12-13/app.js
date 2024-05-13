@@ -65,18 +65,21 @@
 
 // Q5)
 
-// let dbPassword = (12345);
-// let userPassword = prompt("Enter your password");
+let dbPassword = 12345;
+let userPassword = prompt("Enter your password");
 
 // if (!userPassword) {
 //     alert("Please enter your password")
 // }
-// else if (dbPassword == userPassword) {
-//     alert("Correct! The password you entered matches the original password");
-// }
-// else if (dbPassword != userPassword) {
-//     alert("Incorrect password");
-// }
+if (userPassword.trim() == "") {
+    alert('Please Enter Your Password');
+}
+else if (dbPassword == userPassword) {
+    alert("Correct! The password you entered matches the original password");
+}
+else if (dbPassword != userPassword) {
+    alert("Incorrect password");
+}
 
 // Q6) 
 
